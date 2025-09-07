@@ -11,7 +11,7 @@ passport.use(
     {
       clientID: GOOGLE_CLIENT_ID,
       clientSecret: GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:5000/auth/google/callback", // fixed
+      callbackURL: "https://o-auth-zeta.vercel.app/auth/google/callback", // fixed
       passReqToCallback: true,
     },
     function (request, accessToken, refreshToken, profile, done) {
